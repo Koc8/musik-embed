@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Embed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Embed Musik</h1>
+    <p>Pilih sumber musik lalu paste link-nya!</p>
+
+    <!-- Menu pilihan -->
+    <div class="menu">
+      <select id="platform">
+        <option value="spotify">Spotify</option>
+        <option value="youtube">YouTube</option>
+      </select>
+      <input type="text" id="link" placeholder="Paste link Spotify / YouTube di sini">
+      <button onclick="loadPlayer()">Tampilkan</button>
+    </div>
+
+    <!-- Tempat muncul player -->
+    <div id="player-box" class="player-box">
+      <p>Player akan muncul di sini...</p>
+    </div>
+  </div>
+
+  <!-- Tombol download pihak ketiga -->
+    <div id="download-box" class="download-box" style="display:none;">
+      <a id="download-link" href="#" target="_blank" class="download-btn">⬇️ Download via Pihak Ketiga</a>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
